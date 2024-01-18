@@ -1,0 +1,47 @@
+/* Slider container */
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Image container */
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+
+/* Individual images */
+.image {
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Active image */
+.image.active {
+  opacity: 1;
+}
+
+/* Previous and Next buttons */
+.slider-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+/* Button hover effect */
+.slider-btn:hover {
+  background-color: #555;
+}
